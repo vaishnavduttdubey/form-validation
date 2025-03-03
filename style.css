@@ -1,0 +1,85 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background-color: rgb(220, 186, 253);
+}
+
+/* Form container */
+#form {
+    width: 500px;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background-color: rgb(251, 230, 167);
+    border-radius: 10px;
+    font-size: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect on form */
+#form:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Form header */
+h1 {
+    border-bottom: 1px solid rgb(0, 0, 44);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form control container */
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input fields */
+.form-control input {
+    border: 2px solid rgb(181, 181, 247);
+    border-radius: 2px;
+    font-size: 14px;
+    padding: 12px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+/* Input focus effect */
+.form-control input:focus {
+    border-color: rgb(151, 66, 235);
+    outline: none;
+    box-shadow: 0 0 5px rgba(151, 66, 235, 0.5);
+}
+
+/* Error message styling */
+.form-control .error {
+    color: rgb(248, 7, 7);
+    font-size: 12px;
+    height: 13px;
+    margin: 10px;
+}
+
+/* Submit button */
+.form #btn {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    color: rgb(252, 244, 255);
+    background-color: rgb(151, 66, 235);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Submit button hover effect */
+.form #btn:hover {
+    background-color: rgb(120, 50, 200);
+    box-shadow: 0 0 10px rgba(151, 66, 235, 0.6);
+}
